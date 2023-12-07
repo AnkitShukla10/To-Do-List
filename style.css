@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(212, 113, 237);
+}
+
+.heading {
+    margin-bottom: 50px;
+    background-color: lightcoral;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    /* border-bottom: 8px solid; */
+    box-shadow: 0 0 5px blue;
+    transform: scale(1);
+}
+
+.heading:hover {
+    background-color: #eefa04;
+    transform: scale(5s);
+
+}
+
+.box {
+    width: 700px;
+    /* min-height: 500px; */
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 0 40px #fa048f;
+
+}
+
+#item {
+    padding: 10px;
+    width: 100%;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    display: block;
+    box-shadow: 0 0 2px rgb(215, 5, 5);
+    width: 100%;
+}
+
+#to-do-box {
+    list-style: none;
+    margin-top: 20px
+}
+
+#to-do-box li {
+    position: relative;
+    padding: 10px;
+    color: white;
+    background-color: blueviolet;
+    border-radius: 2px;
+    text-align: justify;
+    padding-right: 35px;
+    margin-top: 10px;
+    user-select: none;
+
+}
+
+#to-do-box li i {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.done {
+    text-decoration: line-through;
+    color: black;
+    background-color: #95a5a6 !important;
+}
+
+@media screen and (max-width: 600px) {
+    main {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* background-color: rgb(212, 113, 237); */
+    }
+
+    body {
+        background-color: lightgreen;
+
+    }
+
+    .box {
+        width: 350px;
+        margin: 80px;
+    }
+
+    .heading {
+        margin-bottom: 50px;
+        background-color: lightcoral;
+        padding: 20px;
+        border-radius: 10px;
+        /* border-bottom: 8px solid; */
+        box-shadow: 0 0 5px blue;
+        transform: scale(1);
+    }
+
+    .heading:hover {
+        background-color: #eefa04;
+        transform: scale(5s);
+
+    }
+}
